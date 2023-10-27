@@ -14,7 +14,7 @@ The files will be hosted off of GitHub, with this README and other necessary fil
 
 ## [Project64](https://www.pj64-emu.com/windows-downloads) using [latest GLideN64 WIP build](https://github.com/gonetz/GLideN64/releases)
 
-1. Press the "Code button" on the right side of the Github page, then "Download .ZIP".
+1. Visit the [mirror(https://evilgames.eu/texture-packs/mario-kart-64-hd.htm)] of the project, then "Download .ZIP".
 2. Once downloaded, extract everything that's inside of the ZIP into your `~/Project64/Plugin/GFX/GlideN64/hires_texture/MARIOKART64` folder.[^paths]
 3. Make sure the game runs, then adjust the graphics configuration for your Mario Kart 64 rom by highlighting the game in your ROM Directory within P643.0, then:
 4. Options > Configuration > Config: Mario Kart 64: Plugins > Video > GlideN64.
@@ -22,7 +22,7 @@ The files will be hosted off of GitHub, with this README and other necessary fil
 
 ## [Mupen64Plus](https://www.mupen64plus.org) using [latest GLideN64 WIP build](https://github.com/gonetz/GLideN64/releases)
 
-1. Press the "Code button" on the right side of the Github page, then "Download .ZIP". If you are using [RMG](https://github.com/Rosalie241/RMG/releases), instructions are similar to the ones of Project64.
+1. Visit the [mirror(https://evilgames.eu/texture-packs/mario-kart-64-hd.htm)] of the project. If you are using [RMG](https://github.com/Rosalie241/RMG/releases), instructions are similar to the ones of Project64.
 2. Once downloaded, extract everything that's inside of the ZIP into your `%APPDATA%/Mupen64Plus/hires_texture/MARIOKART64` folder.
    - On Linux, the path is: `~/.local/share/mupen64plus/hires_texture`
    - On macOS, the path is: `~/Library/Application Support/Mupen64plus/hires_texture`
@@ -35,7 +35,7 @@ The files will be hosted off of GitHub, with this README and other necessary fil
 
 **Use the Mupen64Plus-Next core.**
 
-1. Press the "Code button" on the right side of the Github page, then "Download .ZIP".
+1. Visit the [mirror(https://evilgames.eu/texture-packs/mario-kart-64-hd.htm)] of the project.
 2. Once downloaded, put everything that's inside of the ZIP into your `~/RetroArch-Win64/System/Mupen64plus/hires_texture/MARIOKART64` folder.
 3. Ensure that the `cache` folder exists in the directory.
 3. From the Retroarch main menu, go to Load Core > Download a Core > Nintendo - Nintendo 64 (Mupen64Plus-Next).
@@ -49,10 +49,9 @@ The files will be hosted off of GitHub, with this README and other necessary fil
 ## [Dolphin latest WIP build](https://dolphin-emu.org/download/)
 
 1. DDS textures are highly recommended. These can be found [here](https://evilgames.eu/texture-packs/mario-kart-64-hd.htm)
-2. Alternatively, change the branch to [Dolphin](https://github.com/AndratVA/Mario-Kart-64-HD/tree/Dolphin) and press the "Code button" on the right side of the Github page, then "Download .ZIP".
-3. Extract the ZIP file into `%username%/Documents/Dolphin Emulator/Load/Textures` (`~/.local/share/dolphin-emu/Load/Textures` on Linux, `~/Library/Application Support/Dolphin/Load/Textures` on macOS).
-4. Graphics > Advanced > Load Custom Textures
-5. Graphics > Advanced > Prefetch Custom Textures (requires high amounts of RAM)
+1. Extract the ZIP file into `%username%/Documents/Dolphin Emulator/Load/Textures` (`~/.local/share/dolphin-emu/Load/Textures` on Linux, `~/Library/Application Support/Dolphin/Load/Textures` on macOS).
+1. Graphics > Advanced > Load Custom Textures
+1. Graphics > Advanced > Prefetch Custom Textures (requires high amounts of RAM)
 
 [^cache]: The respective .htc or .hts file will need to be created during the first startup. This takes time and the created file will be stored in the cache directory. Note that Project64 is 32-bit, so using .htc is going to fail due to memory restrictions.
 [^paths]: The path to the textures may differ and can be changed using GLideN64 settings.
