@@ -1,4 +1,4 @@
-name: CI
+name: Convert and Upload Markdown to Word
 permissions:
   contents: write
 # Controls when the workflow will run
@@ -27,6 +27,10 @@ jobs:
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
+      - name: Debug environment
+        run: |
+          pwd
+          ls
       - uses: pandoc/actions/setup@v1
       - name: Convert .md to Word
         run: |
