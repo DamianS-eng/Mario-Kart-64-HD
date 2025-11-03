@@ -49,7 +49,9 @@ The files will be hosted off of GitHub, with this README and other necessary fil
 ## [Dolphin latest WIP build](https://dolphin-emu.org/download/)
 
 1. DDS textures are highly recommended. These can be found [here](https://evilgames.eu/texture-packs/mario-kart-64-hd.htm).
-1. Extract the ZIP file into `%username%/Documents/Dolphin Emulator/Load/Textures` (`~/.local/share/dolphin-emu/Load/Textures` on Linux, `~/Library/Application Support/Dolphin/Load/Textures` on macOS).
+1. Extract the ZIP file into `%username%/Documents/Dolphin Emulator/Load/Textures`
+   - On Linux, extract to `~/.local/share/dolphin-emu/Load/Textures`,
+   - On macOS, extract to `~/Library/Application Support/Dolphin/Load/Textures`.
 1. Graphics > Advanced > Load Custom Textures
 1. Graphics > Advanced > Prefetch Custom Textures (requires high amounts of RAM)
 
