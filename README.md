@@ -6,7 +6,7 @@ This is a high-definition texture pack for the game Mario Kart 64, for emulators
 
 ## Where is it?
 
-The files will be hosted off of GitHub, with this README and other necessary files stored here for reference.
+The files for the texture pack are not hosted here on GitHub, rather this README and other necessary files stored here for reference. Refer to the mirror links to download them.
 
 ![](/mk64hd.jpg)
 
