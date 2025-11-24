@@ -5,25 +5,18 @@ permissions:
 on:
   # Triggers the workflow on push or pull request events but only for the "main" branch
   push:
-    branches: [ "convert-word" ]
+    branches: [ "main" ]
   pull_request:
-    branches: [ "convert-word" ]
-
-  # Allows you to run this workflow manually from the Actions tab
+    branches: [ "main" ]
   workflow_dispatch:
 
-# A workflow run is made up of one or more jobs that can run sequentially or in parallel
 jobs:
-  # This workflow contains a single job called "build"
   convert_via_pandoc:
-    # The type of runner that the job will run on
     runs-on: ubuntu-latest
     env:
       INPUT: README.md
       OUTPUT: README.docx
-    # Steps represent a sequence of tasks that will be executed as part of the job
     steps:
-      # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v4
         with:
           token: ${{ secrets.GITHUB_TOKEN }}
@@ -41,13 +34,13 @@ jobs:
             echo "❌ Pandoc could not find the image."
             exit 1
           fi
-
-      # Runs a set of commands using the runners shell
       - name: Commit and Push
         run: |
+          OWNER=$(echo $GITHUB_REPOSITORY | cut -d'/' -f1)
+          REPO=$(echo $GITHUB_REPOSITORY | cut -d'/' -f2)
           git config user.name "github-actions[bot]"
           git config user.email "github-actions[bot]@users.noreply.github.com"
-          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/DamianS-eng/Mario-Kart-64-HD.git
+          git remote set-url origin https://x-access-token:${{ secrets.GITHUB_TOKEN }}@github.com/$OWNER/$REPO.git
           git add "$OUTPUT"
           git commit -am "update word"
           git push
